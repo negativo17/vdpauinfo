@@ -1,6 +1,6 @@
 Name:           vdpauinfo
-Version:        1.4
-Release:        10%{?dist}
+Version:        1.5
+Release:        1%{?dist}
 Summary:        Tool to query the capabilities of a VDPAU implementation
 License:        MIT
 URL:            https://www.freedesktop.org/wiki/Software/VDPAU/
@@ -11,7 +11,7 @@ Patch0:         https://gitlab.freedesktop.org/vdpau/%{name}/-/commit/da66af25aa
 BuildRequires:  make
 BuildRequires:  gcc-c++
 BuildRequires:  libtool
-BuildRequires:  pkgconfig(vdpau) >= 1.4
+BuildRequires:  pkgconfig(vdpau) >= 1.5
 
 %description
 Tool to query the capabilities of a VDPAU implementation.
@@ -32,6 +32,9 @@ autoreconf -vif
 %{_bindir}/vdpauinfo
 
 %changelog
+* Fri Oct 07 2022 Simone Caronni <negativo17@gmail.com> - 1.5-1
+- Update to 1.5.
+
 * Tue Feb 15 2022 Simone Caronni <negativo17@gmail.com> - 1.4-10
 - Clean up SPEC file.
 - Add latest patch to show AV1 information.
