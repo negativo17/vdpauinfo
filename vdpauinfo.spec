@@ -6,7 +6,6 @@ License:        MIT
 URL:            https://www.freedesktop.org/wiki/Software/VDPAU/
 
 Source0:        https://gitlab.freedesktop.org/vdpau/%{name}/-/archive/%{version}/%{name}-%{version}.tar.bz2
-Patch0:         https://gitlab.freedesktop.org/vdpau/%{name}/-/commit/da66af25aa327d21179d478f3a6d8c03b6c7f574.diff
 
 BuildRequires:  make
 BuildRequires:  gcc-c++
